@@ -1,0 +1,22 @@
+nota = float(input("Entre com a nota: "))
+
+inteiro = nota // 1 
+
+inteiro = int(inteiro) 
+
+decimal = nota - inteiro 
+
+if decimal <= 0.5:
+    
+    nota_arredondada = inteiro
+    
+    print("\nA sua nota foi arredondada para BAIXO.")
+    
+else:
+    
+    nota_arredondada = inteiro + 1
+    
+    print("\nA sua nota foi arredondada para CIMA.")
+
+print(f"Nota Original: {nota:.2f}")
+print(f"Nota Arredondada Final: {nota_arredondada:.1f}")
